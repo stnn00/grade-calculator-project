@@ -14,6 +14,14 @@ student_grades = {
     "KJ Apa": [81, 74, 89]
 }
 
+# Adding new key-value pairs (students, grades) into dictionary using a dictionary
+transferring_students = {
+    "Tyson Ngo": [91, 95, 98],
+    "Charlie Golf": [75, 84, 70],
+    "Miley Montana": [74, 80, 75]
+}
+student_grades.update(transferring_students)
+
 student_averages = {} # Creating empty dictionary to fill with new calculated data
 class_count = len(student_grades) # Using len() to calculate how many key-value pairs (students) are in student_grades
 student_letter_grades = {} # Creating empty dictionary to fill with new calculated data
