@@ -4,6 +4,10 @@ A Python script to manage a student registry: add, remove, search, and automate 
 # grade_calculator.py
 This Python script grade_calculator.py allows you to manage a student registry by searching for, adding, or withdrawing students. It can determine the class size, track passing and failing students, and calculate both individual and class grades
 
+# Demonstration
+Video on YouTube to demonstrate and explain python script (4:33)
+- https://youtu.be/W-WdiKOddjs
+
 # Instructions
 
 **Calculations**<br>
