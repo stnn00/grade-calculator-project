@@ -63,7 +63,7 @@ for student, average in student_averages.items():
 
 list_averages = list(student_averages.values()) # Using list() to add all dictionary values into a list
 total_sum = (sum(list_averages)) # Using sum() to total all the values (grade averages)
-overall_average = int(total_sum / class_count) # Using int() to turn the float into an integer (whole number), can also use round() depending on grading system
+overall_average = total_sum//class_count # Using floor division to round down the result to a whole number (integer)
 
 print(f"The top performing student is {top_student} with the highest class average of {highest_average}!")
 print(f"The overall class average is {overall_average}.")
