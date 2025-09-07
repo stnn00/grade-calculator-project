@@ -22,6 +22,11 @@ transferring_students = {
 }
 student_grades.update(transferring_students)
 
+# Removing students from dictionary using .pop() method
+dismissed_students = ["Zachary Patrone", "Mia Crossing"]
+for student in dismissed_students:
+    student_grades.pop(student, None) # Added None to avoid any errors popping up when there are no dismissed students
+
 student_averages = {} # Creating empty dictionary to fill with new calculated data
 class_count = len(student_grades) # Using len() to calculate how many key-value pairs (students) are in student_grades
 student_letter_grades = {} # Creating empty dictionary to fill with new calculated data
