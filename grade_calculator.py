@@ -4,7 +4,7 @@ student_grades = {
     "Kaitlyn Nguyen": [89, 91, 98],
     "Jason Nguyen": [90, 80, 84],
     "Erick Santos": [68, 71, 70],
-    "Zheng Yongkang": [90, 91, 89],
+    "Zheng Yongkang": [90, 80, 84],
     "Benjy Fish": [71, 70, 70],
     "Lebron James": [85, 81, 88],
     "Jenna Ortega": [81, 74, 70],
