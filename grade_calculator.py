@@ -36,7 +36,7 @@ passing_students = 0
 failing_students = 0
 
 for student, grade in student_grades.items(): # Iterating student_grades dictionary so I can work with each student data individually
-    average_score = int(sum(grade) / len(grade)) # Using sum() to find the sum of each student's grades, then using / len() to divide by how many grades they have (3), int() turns the float (number with a decimal) into an integer (whole number)
+    average_score = (sum(grade)//len(grade)) # Using sum() to find the sum of each student's grades, then using len() function to divide by how many grades they have (3). // is floor division to round down to the nearest whole number (integer)
     student_averages[student] = average_score # Adding individual average scores into student_averages dictionary
 
 for student, average in student_averages.items():
