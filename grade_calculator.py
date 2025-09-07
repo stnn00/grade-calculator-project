@@ -1,8 +1,8 @@
 # Python dictionary to store student name and grade data
 student_grades = {
     "Anna Nguyen": [80, 83, 87],
-    "Kaitlyn Nguyen": [89, 91, 98],
-    "Jason Nguyen": [90, 80, 84],
+    "Steve Alex": [89, 91, 98],
+    "Tony Hawk": [90, 80, 84],
     "Erick Santos": [68, 71, 70],
     "Zheng Yongkang": [90, 80, 84],
     "Benjy Fish": [71, 70, 70],
