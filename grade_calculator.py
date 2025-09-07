@@ -28,7 +28,7 @@ for student in dismissed_students:
     student_grades.pop(student, None) # Added None to avoid any errors popping up when there are no dismissed students
 
 student_averages = {} # Creating empty dictionary to fill with new calculated data
-class_count = len(student_grades) # Using len() to calculate how many key-value pairs (students) are in student_grades
+class_size = len(student_grades) # Using len() to calculate how many key-value pairs (students) are in student_grades
 student_letter_grades = {} # Creating empty dictionary to fill with new calculated data
 highest_average = 0
 top_student = ""
@@ -63,7 +63,7 @@ for student, average in student_averages.items():
 
 list_averages = list(student_averages.values()) # Using list() to add all dictionary values into a list
 total_sum = (sum(list_averages)) # Using sum() to total all the values (grade averages)
-overall_average = total_sum//class_count # Using floor division to round down the result to a whole number (integer)
+overall_average = total_sum//class_size # Using floor division to round down the result to a whole number (integer)
 
 print(f"The top performing student is {top_student} with the highest class average of {highest_average}!\nThe overall class average is {overall_average}.\n{passing_students} students successfully passed the course!")
 
