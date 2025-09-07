@@ -65,9 +65,7 @@ list_averages = list(student_averages.values()) # Using list() to add all dictio
 total_sum = (sum(list_averages)) # Using sum() to total all the values (grade averages)
 overall_average = total_sum//class_count # Using floor division to round down the result to a whole number (integer)
 
-print(f"The top performing student is {top_student} with the highest class average of {highest_average}!")
-print(f"The overall class average is {overall_average}.")
-print(f"{passing_students} students successfully passed the course!")
+print(f"The top performing student is {top_student} with the highest class average of {highest_average}!\nThe overall class average is {overall_average}.\n{passing_students} students successfully passed the course!")
 
 student_first_last = input("To check student's letter grade, enter their first and last name: ")
 
