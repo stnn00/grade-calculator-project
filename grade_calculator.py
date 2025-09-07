@@ -65,3 +65,10 @@ overall_average = int(total_sum / class_count) # Using int() to turn the float i
 print(f"The top performing student is {top_student} with the highest class average of {highest_average}!")
 print(f"The overall class average is {overall_average}.")
 print(f"{passing_students} students successfully passed the course!")
+
+student_first_last = input("To check student's letter grade, enter their first and last name: ")
+
+if student_first_last in student_letter_grades:
+    print(f"{student_first_last}'s current letter grade is a {student_letter_grades[student_first_last]}.")
+else:
+    print(f'Student "{student_first_last}" does not exist in the registry. Please check the spelling and proper capitalization.')
