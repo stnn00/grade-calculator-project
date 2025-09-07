@@ -33,6 +33,7 @@ student_letter_grades = {} # Creating empty dictionary to fill with new calculat
 highest_average = 0
 top_student = ""
 passing_students = 0
+failing_students = 0
 
 for student, grade in student_grades.items(): # Iterating student_grades dictionary so I can work with each student data individually
     average_score = int(sum(grade) / len(grade)) # Using sum() to find the sum of each student's grades, then using / len() to divide by how many grades they have (3), int() turns the float (number with a decimal) into an integer (whole number)
@@ -57,6 +58,8 @@ for student, average in student_averages.items():
         top_student = student
     if average >= 70:
         passing_students += 1
+    elif average <= 69:
+        failing_students += 1
 
 list_averages = list(student_averages.values()) # Using list() to add all dictionary values into a list
 total_sum = (sum(list_averages)) # Using sum() to total all the values (grade averages)
